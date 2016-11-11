@@ -11,13 +11,13 @@ layout: default
         <h3><a href="{{site.baseurl}}{{posts.url}}">{{posts.title}}</a></h3>
         <p>{{posts.meta}}</p>
         <p>{{posts.source}}</p>
-        {% for tags in posts.tags %}
-          <ul>
-            <li>
-              <a href="{{site.baseurl}}/{{tags}}/index.html">{{tags}}</a>
-            </li>
-          </ul>
-        {% endfor %}
+
+        <ul class="tags">
+          {% for tag in posts.tags %}
+            <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+          {% endfor %}
+        </ul>
+
       </li>
     {% endfor %}
   </ul>
@@ -32,7 +32,13 @@ layout: default
         <h3><a href="{{site.baseurl}}{{posts.url}}">{{posts.title}}</a></h3>
         <p>{{posts.meta}}</p>
         <p>{{posts.source}}</p>
-        <p>{{posts.tags}}</p>
+
+        <ul class="tags">
+          {% for tag in posts.tags %}
+            <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+          {% endfor %}
+        </ul>
+        
       </li>
     {% endfor %}
   </ul>
