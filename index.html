@@ -8,7 +8,7 @@ layout: default
   <ul>
     {% for posts in site.categories.media limit:2 %}
       <li>
-        <a href="{{site.baseurl}}{{news.url}}">{{posts.title}}</a>
+        <a href="{{site.baseurl}}{{posts.url}}">{{posts.title}}</a>
         <p>{{posts.meta}}</p>
         <p>{{posts.source}}</p>
         <p>{{posts.tags}}</p>
@@ -23,7 +23,7 @@ layout: default
   <ul>
     {% for posts in site.categories.interaction limit:2 %}
       <li>
-        <a href="{{site.baseurl}}{{news.url}}">{{posts.title}}</a>
+        <a href="{{site.baseurl}}{{posts.url}}">{{posts.title}}</a>
         <p>{{posts.meta}}</p>
         <p>{{posts.source}}</p>
         <p>{{posts.tags}}</p>
