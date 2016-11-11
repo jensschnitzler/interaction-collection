@@ -27,13 +27,7 @@
           <li><a href="https://github.com/jensschnitzler/interaction-collection">View On <strong>GitHub</strong></a></li>
         </ul>
 
-        <nav>
-          <ul>
-            <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-            <li><a href="{{site.baseurl}}/news.html">News</a></li>
-          </ul>
-        </nav>
-
+        {% include nav.html %}
       </header>
 
       <!-- content start -->
@@ -41,6 +35,7 @@
       <!-- content end -->
 
       <footer>
+        {% include nav.html %}
         <p>This project is maintained by <a href="https://github.com/jensschnitzler">jensschnitzler</a></p>
         <p><small>Hosted on GitHub Pages</small></p>
       </footer>
