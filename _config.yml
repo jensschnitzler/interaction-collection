@@ -1,3 +1,7 @@
 markdown: redcarpet
 baseurl: /interaction-collection
 exclude: ['README.md']
+tag_permalink_style: pretty
+tag_page_data:
+  sitemap: false
+ignored_tags: [tags,to,ignore]
