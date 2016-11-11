@@ -1,4 +1,4 @@
-# interaction-collection
+# Interaction Collection
 A repository for collecting noteworthy interaction design elements.
 
 ## Where to host what:
