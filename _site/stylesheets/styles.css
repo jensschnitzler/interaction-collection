@@ -177,7 +177,7 @@ header {
   border: 1px solid black;
 }
 
-nav, nav ul, nav li, nav a {
+header nav, header nav ul, header nav li, header nav a {
   display: inline-block;
   margin:  0;
   padding: 0;
@@ -188,19 +188,6 @@ nav, nav ul, nav li, nav a {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px;
-}
-
-nav {
-}
-
-nav li {
-  /*border-right: 1px solid black;*/
-}
-
-nav a {
-  display:  block;
-  padding: 0.5em;
-  margin: 0;
   color: #000;
 }
 
