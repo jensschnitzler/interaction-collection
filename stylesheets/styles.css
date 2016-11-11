@@ -185,8 +185,13 @@ nav a {
   display:  block;
   padding: 0 4px 2px 0;
   color: #000;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  /*text-transform: uppercase;
+  letter-spacing: 0.5px;*/
+}
+
+nav a.current {
+  /*text-decoration: underline;*/
+  border-bottom: 1px solid black;
 }
 
 header ul, footer ul {
