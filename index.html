@@ -6,12 +6,18 @@ layout: default
   <h2>Media</h2>
   <p>Information</p>
   <ul class="posts-list">
-    {% for posts in site.categories.media limit:2 %}
+    {% for posts in site.categories.media %}
       <li>
         <h3><a href="{{site.baseurl}}{{posts.url}}">{{posts.title}}</a></h3>
         <p>{{posts.meta}}</p>
         <p>{{posts.source}}</p>
-        <p>{{posts.tags}}</p>
+        {% for tags in posts.tags %}
+          <ul>
+            <li>
+              <a href="{{site.baseurl}}/{{tags}}/index.html">{{tags}}</a>
+            </li>
+          </ul>
+        {% endfor %}
       </li>
     {% endfor %}
   </ul>
@@ -21,7 +27,7 @@ layout: default
   <h2>Collection</h2>
   <p>Information</p>
   <ul class="posts-list">
-    {% for posts in site.categories.interaction limit:2 %}
+    {% for posts in site.categories.interaction %}
       <li>
         <h3><a href="{{site.baseurl}}{{posts.url}}">{{posts.title}}</a></h3>
         <p>{{posts.meta}}</p>

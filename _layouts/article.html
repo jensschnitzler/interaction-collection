@@ -4,8 +4,8 @@ layout: default
 
 <section>
   <h2>{{page.title}}</h2>
-  <p>{{posts.meta}}</p>
-  <p>{{posts.source}}</p>
-  <p>{{posts.tags}}</p>
+  <p>{{page.meta}}</p>
+  <p>Source: <a href="{{page.source}}"></a>{{page.source}}</p>
+  <p>{{page.tags}}</p>
   {{content}}
 </section>
