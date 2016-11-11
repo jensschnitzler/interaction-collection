@@ -5,10 +5,10 @@ layout: default
   <h3>News</h3>
 
   <ul>
-    {% for post in site.posts %}
+    {% for news in site.posts %}
       <li>
-        <a href=""></a>
-        <p></p>
+        <a href="">{{news.title}}</a>
+        <p>{{news.meta}}</p>
       </li>
     {% endfor %}
   </ul>
