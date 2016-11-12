@@ -2,32 +2,25 @@
 layout: default
 ---
 
-{% include nav_1.html %}
-
-<section id="media">
-  <h2>Media</h2>
-  <p>Information</p>
+<section id="contributors">
+  <h2>Contributors</h2>
   <ul class="posts-list">
-    {% for posts in site.categories.media %}
+    {% for posts in site.categories.contributors %}
       <li>
         <h3><a href="{{site.baseurl}}{{posts.url}}">{{posts.title}}</a></h3>
-        <p>{{posts.meta}}</p>
-        <ul class="tags">
-          {% for tag in posts.tags %}
-            <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
-          {% endfor %}
-        </ul>
+        <a href="{{site.baseurl}}{{posts.url}}">
+      
+        </a>
 
       </li>
     {% endfor %}
   </ul>
 </section>
 
-<section id="collection">
-  <h2>Collection</h2>
-  <p>Information</p>
+<section id="Articles">
+  <h2>Articles</h2>
   <ul class="posts-list">
-    {% for posts in site.categories.interaction %}
+    {% for posts in site.categories.articles %}
       <li>
         <h3><a href="{{site.baseurl}}{{posts.url}}">{{posts.title}}</a></h3>
         <p>{{posts.meta}}</p>
@@ -40,4 +33,9 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+</section>
+
+<section id="About">
+  <h2>About</h2>
+  <p>Lorem ipsum</p>
 </section>
