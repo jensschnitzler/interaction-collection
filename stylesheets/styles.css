@@ -26,7 +26,6 @@ body {
   margin:   3.5em auto 0.5em auto;
   width:    96vw;
   /*border:   1px solid black;*/
-  min-height:  120vh;
   border:   0;
 }
 
@@ -43,10 +42,6 @@ header {
   top: 0;
 }
 
-section {
-
-}
-
 h1, h2, h3, h4, h5, h6 {
   color:        #000;
   margin:       0;
@@ -54,8 +49,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height:  1.5;
   font-size:    1em;
   font-weight:  400;
-  min-width: 100px;
-  max-width: 500px;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size:    0.9em;
 }
 
 p, ul, ol, table, pre, dl {
@@ -65,10 +64,21 @@ p, ul, ol, table, pre, dl {
 }
 
 p {
-  margin: 0;
-  padding: 0;
-  min-width: 100px;
-  max-width: 550px;
+  margin:     0;
+  padding:    0;
+  min-width:  100px;
+  max-width:  700px;
+}
+
+.article p {
+  max-width:  480px;
+}
+
+img {
+  /*max-width:100%;
+  max-height: 30vh;*/
+  max-width:  480px;
+  max-height:  480px;
 }
 
 h1 a, h2 a, h3 a {
@@ -125,10 +135,6 @@ th {
   color:#444;
 }
 
-img {
-  max-width:100%;
-}
-
 header nav, header nav ul, header nav li, header nav a {
   display: inline-block;
   margin:  0;
@@ -171,7 +177,11 @@ strong {
   border-top: 1px solid black;
   display:  inline-block;
   min-width: 100px;
-  max-width: 500px;
+  max-width: 320px;
+}
+
+.posts-list img {
+  max-height: 100px;
 }
 
 ul.tags {

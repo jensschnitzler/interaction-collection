@@ -3,7 +3,7 @@ layout: article
 title: Ares (Ἄρης, Árēs)
 meta: God of war, bloodshed, and violence.
 source: www.wikipedia.com
-category: articles
+category: article
 tags: greek god ares
 ---
 

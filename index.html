@@ -5,11 +5,11 @@ layout: default
 <section id="contributors">
   <h2>Contributors</h2>
   <ul class="posts-list">
-    {% for posts in site.categories.contributors %}
+    {% for post in site.categories.contributor %}
       <li>
-        <h3><a href="{{site.baseurl}}{{posts.url}}">{{posts.title}}</a></h3>
-        <a href="{{site.baseurl}}{{posts.url}}">
-      
+        <h3><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
+        <a href="{{site.baseurl}}{{post.url}}">
+          {{ post.excerpt }}
         </a>
 
       </li>
@@ -17,25 +17,19 @@ layout: default
   </ul>
 </section>
 
-<section id="Articles">
+<section id="articles">
   <h2>Articles</h2>
   <ul class="posts-list">
-    {% for posts in site.categories.articles %}
+    {% for post in site.categories.article %}
       <li>
-        <h3><a href="{{site.baseurl}}{{posts.url}}">{{posts.title}}</a></h3>
-        <p>{{posts.meta}}</p>
-        <ul class="tags">
-          {% for tag in posts.tags %}
-            <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
-          {% endfor %}
-        </ul>
-        
+        <h3><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
+        <p>{{post.meta}}</p>
       </li>
     {% endfor %}
   </ul>
 </section>
 
-<section id="About">
+<section id="about">
   <h2>About</h2>
   <p>Lorem ipsum</p>
 </section>
