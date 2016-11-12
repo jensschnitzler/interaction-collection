@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 p, ul, ol, table, pre, dl {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 p {
@@ -167,17 +168,26 @@ img {
   max-width:100%;
 }
 
-header {
+header, footer, section {
   display: block;
-  display: flex;
   align-self: stretch;
   flex-grow: 12;
-  padding: 0.5em;
-  margin: 0.5em;
+  padding: 1em;
+  margin: 0.1em;
   border: 1px solid black;
 }
 
-header nav, header nav ul, header nav li, header nav a {
+section {
+  flex-grow: 4;
+  align-self: flex-start;
+  /*
+  min-width: 300px;
+  width: 30%;
+  max-width: 650px;
+  */
+}
+
+header nav, header nav ul, header nav li, header nav a, nav, nav ul, nav li, nav a {
   display: inline-block;
   margin:  0;
   padding: 0;
@@ -191,21 +201,14 @@ header nav, header nav ul, header nav li, header nav a {
   color: #000;
 }
 
+header h1, header p, header nav, header nav a {
+  display:  inline-block;
+  margin: 0 1em 0.5em 0;
+}
+
 strong {
   color:#222;
   font-weight:700;
-}
-
-section {
-  display: block;
-  flex-grow: 4;
-  align-self: flex-start;
-  border: 1px solid black;
-  padding: 0.5em;
-  margin: 0.5em;
-  min-width: 300px;
-  width: 30%;
-  max-width: 650px;
 }
 
 .posts-list{
@@ -243,19 +246,7 @@ hr {
   margin:0 0 20px;
 }
 
-footer {
-  display: block;
-  flex-grow: 12;
-  flex-grow: 12;
-  width:  100%;
-  width:  100vw;
-  padding: 0.5em;
-  margin: 0.5em;
-  /*border: 1px solid black;*/
-  /*width:270px;
-  float:left;*/
-  position:relative;
-}
+
 
 
 /*
