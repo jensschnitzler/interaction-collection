@@ -168,7 +168,7 @@ strong {
   align-content: flex-start; /*flex-start | flex-end | center | space-between | space-around | stretch*/
 }
 
-.posts-list li{
+.posts-list li {
   flex-grow: 1;
   flex-basis: auto;
   padding: 0;
@@ -178,6 +178,10 @@ strong {
   display:  inline-block;
   min-width: 100px;
   max-width: 320px;
+}
+
+#contributors .posts-list li {
+  max-width:  160px;
 }
 
 .posts-list img {
