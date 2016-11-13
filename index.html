@@ -7,8 +7,8 @@ layout: default
   <ul class="posts-list">
     {% for post in site.categories.contributor %}
       <li>
-        <h3><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
-        <a href="{{site.baseurl}}{{post.url}}">
+        <h3><a target="_blank" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
+        <a target="_blank" href="{{site.baseurl}}{{post.url}}">
           {{ post.excerpt }}
         </a>
 
@@ -22,7 +22,8 @@ layout: default
   <ul class="posts-list">
     {% for post in site.categories.article %}
       <li>
-        <h3><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
+        <p class="post-date">{{post.date | date: '%B %d, %Y' }}</p>
+        <h3><a target="_blank" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
         <p>{{post.meta}}</p>
       </li>
     {% endfor %}
@@ -31,5 +32,5 @@ layout: default
 
 <section id="about">
   <h2>About</h2>
-  <p>Lorem ipsum</p>
+  <p>This is a template blog. It is supposed to be used for the documentation of projects. Posts with the category "Contributor" in the <a target="_blank" href="https://jekyllrb.com/docs/frontmatter/">Front Matter</a> will be shown in the section "Contributors". Posts with the category "Article" will be shown in the section "Articles".</p>
 </section>
