@@ -6,22 +6,13 @@ exclude: ['README.md']
 permalink:        pretty
 
 # Setup
-title:            interaction-collection
-tagline:          My Github + Jekyll Template Blog
-url:              http://jensschnitzler.com
-baseurl:          /interaction-collection
-author:
-  name:           Jens Schnitzler
-  email:          jens.schnitzler@gmail.com
+# title:            interaction-collection
+# url:              http://jensschnitzler.com
+# baseurl:          /interaction-collection
+# author:
+#   name:           Jens Schnitzler
+#   email:          jens.schnitzler@gmail.com
 
-#tag_permalink_style: pretty
-#tag_page_data:
-#  sitemap: false
-#ignored_tags: [tags,to,ignore]
-#tag_page_layout: tag_page
-#tag_page_dir: tag
-#tag_feed_layout: tag_feed
-#tag_feed_dir: tag
 
 collections:
   - poetry:
