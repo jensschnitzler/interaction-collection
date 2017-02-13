@@ -1,4 +1,4 @@
-markdown: redcarpet
+markdown: kramdown
 
 exclude: ['README.md']
 
@@ -7,7 +7,7 @@ permalink:        pretty
 
 # Setup
 title:            interaction-collection
-tagline:          My Github+Jekyll Template Blog
+tagline:          My Github + Jekyll Template Blog
 url:              http://jensschnitzler.com
 baseurl:          /interaction-collection
 author:
@@ -28,7 +28,7 @@ collections:
       output: true
   - my_categories:
       output: true
-      permalink: /blog/category/:name/
+      #permalink: /blog/category/:name/
   - my_tags:
       output: true
-      permalink: /blog/tag/:name/
+      #permalink: /blog/tag/:name/
