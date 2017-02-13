@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% assign category = site.my_categories | where: "slug", post.category %}
+{% assign category = category[0] %}
+{% if category %}
+    {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
+{% endif %}
+
+<a href="{{site.baseurl}}/index.html">&#8592; back</a>
+<section class="article">
+  <p class="post-date">{{page.date | date: '%B %d, %Y' }}</p>
+  <h2>{{page.title}}</h2>
+  <!--<p>{{page.meta}}</p>-->
+  <p>Source: <a href="{{page.source}}">{{page.source}}</a></p>
+   <!--<ul class="tags">
+      <li>Tags:</li>
+    {% for tag in page.tags %}
+      <li>{{ tag }}</li>
+    {% endfor %}
+  </ul>-->
+  <hr>
+
+  {{content}}
+
+  <hr>
+
+  <p id="post-meta">Cagegory: {{ category_content }}</p>
+  <p id="post-meta">Tags: {{ category_content }}</p>
+
+  <hr>
+</section>

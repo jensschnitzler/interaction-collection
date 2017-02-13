@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Apollo (Ἀπόλλων, Apóllōn)
 meta: God of music, arts, knowledge, healing, plague, prophecy, poetry, manly beauty, and archery.
 source: www.wikipedia.com

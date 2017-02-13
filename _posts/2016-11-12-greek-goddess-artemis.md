@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Artemis (Ἄρτεμις, Ártemis)
 meta: Virgin goddess of the hunt, wilderness, animals, young girls, childbirth, and plague.
 source: www.wikipedia.com

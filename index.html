@@ -7,8 +7,8 @@ layout: default
   <ul class="posts-list">
     {% for post in site.categories.contributor %}
       <li>
-        <h3><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
-        <a href="{{site.baseurl}}{{post.url}}">
+        <h3><a target="_self" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
+        <a target="_self" href="{{site.baseurl}}{{post.url}}">
           {{ post.excerpt }}
         </a>
 
@@ -23,7 +23,7 @@ layout: default
     {% for post in site.categories.articles %}
       <li>
         <p class="post-date">{{post.date | date: '%B %d, %Y' }}</p>
-        <h3><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
+        <h3><a target="_self" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
         <p>{{post.meta}}</p>
       </li>
     {% endfor %}

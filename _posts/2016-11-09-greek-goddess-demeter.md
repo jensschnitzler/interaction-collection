@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Demeter (Δημήτηρ, Dēmētēr)
 meta: Goddess of grain, agriculture, harvest, growth, and nourishment.
 source: www.wikipedia.com

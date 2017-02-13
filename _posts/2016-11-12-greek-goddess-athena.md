@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Athena (Ἀθηνᾶ, Athēnâ)
 meta: Goddess of reason, wisdom, intelligence, skill, peace, warfare, battle strategy, and handicrafts.
 source: www.wikipedia.com
