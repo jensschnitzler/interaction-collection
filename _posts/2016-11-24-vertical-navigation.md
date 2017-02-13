@@ -3,6 +3,7 @@ layout: post
 title: Vertical Navigation
 meta: Lorem ipsum.
 source: http://codepen.io/JensSchnitzler/pen/jVwwdB
+categories: articles
 category: articles
 tags: [navigation, slick]
 ---
