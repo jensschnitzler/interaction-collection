@@ -20,7 +20,7 @@ layout: default
 <section id="articles">
   <h2>Articles</h2>
   <ul class="posts-list">
-    {% for post in site.categories.article %}
+    {% for post in site.categories.articles %}
       <li>
         <p class="post-date">{{post.date | date: '%B %d, %Y' }}</p>
         <h3><a target="_blank" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>

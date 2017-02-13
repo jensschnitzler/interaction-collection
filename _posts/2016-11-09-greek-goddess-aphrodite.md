@@ -1,9 +1,9 @@
 ---
 layout: article
 title: Aphrodite (Ἀφροδίτη, Aphroditē)
-meta: Goddess of beauty, love, desire, and pleasure. 
+meta: Goddess of beauty, love, desire, and pleasure.
 source: www.wikipedia.com
-category: article
+category: articles
 tags: greek goddess aphrodite
 ---
 
