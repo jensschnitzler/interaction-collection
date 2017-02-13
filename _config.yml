@@ -1,7 +1,19 @@
 markdown: redcarpet
-baseurl: /interaction-collection
+
 exclude: ['README.md']
 
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            interaction-collection
+tagline:          My Github+Jekyll Template Blog
+url:              http://jensschnitzler.com
+baseurl:          /interaction-collection
+author:
+  name:           Jens Schnitzler
+  email:          jens.schnitzler@gmail.com
 
 #tag_permalink_style: pretty
 #tag_page_data:
@@ -13,6 +25,8 @@ exclude: ['README.md']
 #tag_feed_dir: tag
 
 collections:
-  my_categories:
-    output: true
-    permalink: /blog/category/:name/
+  - poetry:
+      output: true
+  - my_categories:
+      output: true
+      permalink: /blog/category/:name/
