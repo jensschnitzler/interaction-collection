@@ -3,8 +3,8 @@ layout: article
 title: Vertical Navigation
 meta: Lorem ipsum.
 source: http://codepen.io/JensSchnitzler/pen/jVwwdB
-category: article
-tags: navigation slick
+category: interaction
+tags: [navigation, slick]
 ---
 
 A superslick navigation.
