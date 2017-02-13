@@ -2,6 +2,19 @@
 layout: default
 ---
 
+<section>
+  <h2>All Posts</h2>
+  <ul class="posts-list">
+    {% for post in site.posts %}
+      <li>
+        <p class="post-date">{{post.date | date: '%B %d, %Y' }}</p>
+        <h3><a target="_self" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
+        <p>{{post.meta}}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
 <section id="contributors">
   <h2>Contributors</h2>
   <ul class="posts-list">
@@ -30,18 +43,7 @@ layout: default
   </ul>
 </section>
 
-<section>
-  <h2>All Posts</h2>
-  <ul class="posts-list">
-    {% for post in site.posts %}
-      <li>
-        <p class="post-date">{{post.date | date: '%B %d, %Y' }}</p>
-        <h3><a target="_self" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
-        <p>{{post.meta}}</p>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+
 
 <section id="about">
   <h2>About</h2>
