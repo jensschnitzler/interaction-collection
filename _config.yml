@@ -4,7 +4,6 @@ exclude: ['README.md']
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
 title:            interaction-collection
